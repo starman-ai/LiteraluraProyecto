@@ -78,12 +78,13 @@ Ejecuta el siguiente comando para descargar las dependencias del proyecto:
   
 3. En el archivo `src/main/resources/application.properties`, configura la conexión a tu base de datos PostgreSQL:
 ```
-spring.datasource.url=jdbc:postgresql://localhost:5432/catalogo_libros
+spring.application.name=literalura
+spring.datasource.url=jdbc:postgresql://localhost:5432/literalura
 spring.datasource.username=tu_usuario
-spring.datasource.password=tu_contraseña
-spring.datasource.driver-class-name=org.postgresql.Driver
-spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+spring.datasource.password=tu_password
 spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=false
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 ```
 ## Ejecución
 Ejecuta el programa desde la línea de comandos:
