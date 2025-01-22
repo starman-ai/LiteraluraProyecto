@@ -79,7 +79,7 @@ Ejecuta el siguiente comando para descargar las dependencias del proyecto:
 3. En el archivo `src/main/resources/application.properties`, configura la conexión a tu base de datos PostgreSQL:
 ```
 spring.application.name=literalura
-spring.datasource.url=jdbc:postgresql://localhost:3306/literalura
+spring.datasource.url=jdbc:postgresql://localhost:5432/literalura
 spring.datasource.username=tu_usuario
 spring.datasource.password=tu_password
 spring.jpa.hibernate.ddl-auto=update
